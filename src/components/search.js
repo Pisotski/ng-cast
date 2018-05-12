@@ -1,15 +1,13 @@
 angular.module('video-player')
 
   .component('search', {
-  // TODO
     bindings: {
       onClick: '<',
-      
+      enterPress: '<',
+      clearSearch: '<'
     },
-    // controller: function(){
-      
-    //   this.result = function() {}
-    //   console.log(this)
-    // },
+    controller: function() {
+      console.log(this, ' from search component');
+    },
     templateUrl: 'src/templates/search.html'
   });

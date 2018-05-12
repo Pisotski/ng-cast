@@ -1,7 +1,10 @@
 <div id="app container">
   <nav class="navbar">
     <div class="col-md-6 col-md-offset-3">
-      <search on-click="$ctrl.searchYouTube"></search>
+      <search on-click="$ctrl.searchYouTube" 
+      enter-press="$ctrl.checkIfEnterKeyWasPressed"
+      clear-search="$ctrl.clearSearch"
+      ></search>
     </div>
   </nav>
   <div class="row">

@@ -1,7 +1,7 @@
 angular.module('video-player')
 
   .service('youTube', function($http) {
-    this.search = function(callback, query = 'soccer') {
+    this.search = function(callback, query = 'learn AngularJS') {
       return $http({
         method: 'GET',
         url: 'https://www.googleapis.com/youtube/v3/search',
@@ -22,8 +22,3 @@ angular.module('video-player')
         });
     };
   });
-    
-//part: 'snippet'
-//key: key
-//q: query
-//max : max

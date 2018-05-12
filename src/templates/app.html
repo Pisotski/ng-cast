@@ -9,7 +9,8 @@
       <video-player><h5><em>videoPlayer</em> component goes here</h5></video-player>
     </div>
     <div class="col-md-5">
-      <video-list><h5><em>videoList</em> component goes here</h5></video-list>
+      <video-list movies="$ctrl.movies" 
+      handle-click="$ctrl.handleVideoClick"></video-list>
     </div>
   <div>
 </div>

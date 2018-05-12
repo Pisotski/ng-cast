@@ -3,13 +3,16 @@ angular.module('video-player')
   .component('app', {
     controller: function() {
       
-      this.movies = exampleVideoData;
-      this.selectedVideo = this.movies[0];
-      this.handleVideoClick = function(video) {
-        this.selectedVideo = video;
+      this.videos = exampleVideoData;
+      this.currentVideo = this.videos[0];
+      this.selectVideo = function(video) {
+        this.currentVideo = video;
+        console.log(this);
       };
-      this.handleVideoClick = this.handleVideoClick.bind(this);
-      
+      this.selectVideo = this.selectVideo.bind(this);
+      this.searchResults = function() {
+        console.log(this);
+      };
     },
 
     templateUrl: 'src/templates/app.html'

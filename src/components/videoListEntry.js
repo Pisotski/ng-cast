@@ -5,7 +5,6 @@ angular.module('video-player')
       handleClick: '<'
     },
     controller: function() {
-      console.log('videoListEntry', this);
     },
     // TODO
     // has to have a binding to videolist
